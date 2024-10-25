@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSRIT Annual Day Program</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="MSRIT Logo" class="logo">
+        <h1>MSRIT Annual Day Program</h1>
+
+        <!-- Registration Form -->
+        <div id="registration">
+            <h2>Register</h2>
+            <form id="regForm">
+                <input type="text" placeholder="Roll Number" id="rollNumber" required>
+                <input type="text" placeholder="Name" id="name" required>
+                <input type="text" placeholder="Department" id="department" required>
+                <input type="text" placeholder="Phone Number" id="phone" required>
+                <input type="email" placeholder="Email ID" id="email" required>
+                <input type="text" placeholder="Username" id="username" required>
+                <input type="password" placeholder="Password" id="password" required>
+                <button type="submit">Register</button>
+            </form>
+            <p>Already have an account? <a href="#" id="showLogin">Login here</a></p>
+        </div>
+
+        <!-- Login Form -->
+        <div id="login" style="display: none;">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="text" placeholder="Username" id="loginUsername" required>
+                <input type="password" placeholder="Password" id="loginPassword" required>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#" id="showRegister">Register here</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

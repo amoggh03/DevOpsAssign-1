@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+</head>
+<body>
+    <h1>Welcome to MSRIT Annual Day Program!</h1>
+    <h2 id="welcomeMessage"></h2>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const name = params.get('name');
+        document.getElementById('welcomeMessage').innerText = `Hello, ${name}! Enjoy the event!`;
+    </script>
+</body>
+</html>
